@@ -1,0 +1,113 @@
+/* For Headings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* For All Body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+*{
+margin: 0;
+padding: 0;
+}
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+  }
+body{
+    background-color: var(--violet);
+    background-image: url(./bg-desktop.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+.lOGO {
+    width: 8em;
+    margin: 2em 0 0 3em;
+  }
+
+ #Main-Container{
+    padding: 1em 3em;
+    display: flex;
+  }
+  #Main-Container .Poster{
+    
+    max-width: 40em;
+  }
+ #Content{
+   
+    padding: 5em 3em;
+    max-width: 40em;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  }
+  
+  #Content h1{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600px;
+    color: var(--white);
+    font-size: 2em;
+  }
+  #Content p{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400px;
+    color: var(--white);
+
+  }
+  #Content button{
+    width: 12em;
+    padding: 1em 0em;
+    border-radius: 20px;
+    border: none;
+    color: var(--violet);
+    font-size: 15px;
+  }
+  #Content button:hover{
+   cursor: pointer;
+   background-color: var(--softMagenta);
+   color: var(--white);
+  }
+  footer{
+    margin-right: 3em;
+  }
+  footer .icon{
+    gap: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon i{
+    border: 2px solid var(--white);
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .icon i:hover{
+    cursor: pointer;
+    border: 2px solid var(--softMagenta);
+   color: var(--softMagenta);
+    
+  }
+
+  /* Media Query For Responsive Websites */
+  @media screen and (max-width: 900px){
+    #Main-Container{
+        flex-direction: column;
+        padding: 1em 1em;
+        justify-content: center;
+      }
+      #Content{
+        width: 70%;
+        justify-content: center;
+        padding: 2em 2em;
+        gap: 10px;
+      }
+      #Content h1{
+        font-size: 1em;
+        font-weight: 700;
+      }
+      footer .icon{
+       justify-content: center;
+      }
+  }
